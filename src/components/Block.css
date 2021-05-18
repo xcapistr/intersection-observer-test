@@ -1,0 +1,30 @@
+@keyframes example {
+    from {transform: translateX(300px) scale(.1); }
+    to {transform: translateX(0) scale(1);}
+}
+@keyframes example2 {
+    from {transform: translateX(-300px) scale(.1);}
+    to {transform: translateX(0) scale(1);}
+}
+
+.block {
+    width: 400px;
+    border-radius: 15px;
+    padding: 50px;
+    margin: 50px auto;
+    font-size: 24px;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+.in-view {
+    opacity: 1;
+    animation-name: example;
+    animation-duration: .5s;
+}
+
+.in-view-2 {
+    opacity: 1;
+    animation-name: example2;
+    animation-duration: .5s;
+}
